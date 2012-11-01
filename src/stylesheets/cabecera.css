@@ -1,0 +1,65 @@
+.cabecera{
+	display: block;
+	width: 100%;
+	margin-bottom: 2%;
+	box-sizing: border-box;
+}
+
+.banner{
+	display: flex;
+	width: 100%;
+	min-height: 250px;
+
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+
+	background: -webkit-linear-gradient(30deg,#0D0D0D 20%, #2E2E2E 0, #2E2E2E 40%, #0D0D0D 0, #0D0D0D 60%, #2E2E2E 0, #2E2E2E 80%,#0D0D0D 0, #0D0D0D 100%);
+	border-left: 10px solid #111111;
+	border-right: 10px solid #111111;
+	border-top: 6px solid #5E5E5E;
+	border-bottom: 6px solid #5E5E5E;
+
+	border-radius: 10px;
+	box-shadow: 0px 5px 10px black;
+
+	font-size: 2.5em;
+	font-style: italic;
+	text-shadow: -5px 5px 3px #290000;
+
+	letter-spacing: 5px;
+
+	color:white;
+	box-sizing: border-box;
+}
+
+.p-1{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	font-weight: bold;
+	font-size: 1.35em;
+
+	text-align: center;
+	opacity:0.8;
+}
+
+.p-2{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	font-size: 1.5em;
+	opacity:0.9;
+}
+
+.l-1,.l-7,.l-9{
+	color:#C20000;
+}
+
+.palabra-1,.palabra-2,.palabra-3{
+	width: 100%;
+}

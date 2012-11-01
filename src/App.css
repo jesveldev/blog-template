@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+
+/* BEGINNING OF RESET CSS */
+
+body,option,header,footer,h1,h2,h3,h4,h5,h6,ul,ol,li,p,div,blockquote,section,table,tr,td,a,figure,figcaption{
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  /*color:#F4F4F4;*/
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul{
+  list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+img{
+  padding: 0;
+  margin: 0;
+  border: none;
 }
 
-.App-link {
-  color: #61dafb;
+/* END OF RESET CSS */
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------------- COMPORTAMIENTO DEL SCROLL ----------------------------------------------------*/
+
+html{
+  scroll-behavior: smooth;
+  font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body{
+  font-family: "Bookman Old Style",Georgia;
+  background-color: #0D0D0D;
 }
+
+body::-webkit-scrollbar{
+  background: rgba(10,10,10,1);
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: #2F2F2F;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
