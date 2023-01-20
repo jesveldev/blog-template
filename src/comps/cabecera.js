@@ -1,8 +1,8 @@
 import '../stylesheets/cabecera.css';
 
-export default function Cabecera(){
+export default function Cabecera({ refCabecera }){
 	return (
-		<header className="cabecera">
+		<header ref={ refCabecera }className="cabecera">
 			<div className="banner">
 				<div className="p-1">
 					<div className="palabra-1">

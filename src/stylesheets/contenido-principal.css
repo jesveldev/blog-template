@@ -1,0 +1,45 @@
+.cont-principal{
+	width: 96%;
+	padding-top: 1%;
+	padding-left:1%;
+	color:#E1E1E1;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.cont-principal p{
+	margin: 2% 0;
+}
+
+/*--------------------------------------------------------------*/
+/*--------------------------------------------------------------*/
+/*--------------------------------------------------------------*/
+
+@keyframes adbl-main-1{
+	from{
+		width: 96%;
+		margin-left: 0%;
+		padding-left: 1%;
+	}
+
+	to{
+		width: 80%;
+		margin-left: 15%;
+		padding-left: 2%;
+	}
+}
+
+@keyframes adbl-main-2{
+	from{
+		width: 80%;
+		margin-left: 15%;
+		padding-left: 2%;
+	}
+
+	to{
+		width: 96%;
+		margin-left: 0%;
+		padding-left: 1%;
+	}
+}

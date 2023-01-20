@@ -1,25 +1,61 @@
 import '../stylesheets/barra-lateral.css';
+import Boton from './boton.js';
 
-function Boton({ children }){
-	return (
-		<button title='Botón de la barra lateral'>Opción #{ children }</button>
-	);
-}
+export default function BarraLateral({
+										refBarraLateral,
+										refBotonDesplegarBarraLateral,
+										refCabecera,
+										refContenidoPrincipal
+									}){
 
-export default function BarraLateral(){
+	function openAside(){
+		if(refBotonDesplegarBarraLateral.current.textContent==='➜'){
+
+			refBarraLateral.current.style.animation = 'adbl-barra-1 0.2s ease-in-out forwards';
+			refCabecera.current.style.animation = 'adbl-header-1 0.2s ease-in-out forwards';
+			refContenidoPrincipal.current.style.animation = 'adbl-main-1 0.2s ease-in-out forwards';
+
+			refBotonDesplegarBarraLateral.current.style.animation = 'adbl-boton-1 0.2s ease-in-out forwards';
+			refBotonDesplegarBarraLateral.current.textContent = '✖';
+
+		}else{
+
+			refBarraLateral.current.style.animation = 'adbl-barra-2 0.2s ease-in-out forwards';
+			refCabecera.current.style.animation = 'adbl-header-2 0.2s ease-in-out forwards';
+			refContenidoPrincipal.current.style.animation = 'adbl-main-2 0.2s ease-in-out forwards';
+
+			refBotonDesplegarBarraLateral.current.style.animation = 'adbl-boton-2 0.2s ease-in-out forwards';
+			refBotonDesplegarBarraLateral.current.textContent = '➜';
+
+		}
+	}
+
+	function anexarBotones(num){
+		let botones = [];
+
+		for(let i = 0; i<num; i++){
+			botones.push(i+1);
+		}
+
+		return botones;
+	}
+
 	return (
-		<aside className="barra-lateral" title="Barra lateral">
-			<ul className="contenedor-ebl">
-				<Boton>1</Boton>
-				<Boton>2</Boton>
-				<Boton>3</Boton>
-				<Boton>4</Boton>
-				<Boton>5</Boton>
-				<Boton>6</Boton>
-				<Boton>7</Boton>
-				<Boton>8</Boton>
-				<Boton>9</Boton>
-			</ul>
-		</aside>
+		<>
+			<aside ref={ refBarraLateral } className="barra-lateral" title="Barra lateral">
+				<ul className="contenedor-ebl">
+					{
+						anexarBotones(9)
+						.map(e=><Boton key={e} title='Boton de la barra lateral'>Opción #{e}</Boton>)
+					}
+				</ul>
+			</aside>
+
+			<Boton
+				ownClass='desplegar-lista'
+				refs = {refBotonDesplegarBarraLateral}
+				ownFunc={openAside}
+			>➜</Boton>
+		</>
 	);
 }

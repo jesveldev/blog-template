@@ -14,7 +14,16 @@
 	justify-content: center;
 	align-items: center;
 
-	background: -webkit-linear-gradient(30deg,#0D0D0D 20%, #2E2E2E 0, #2E2E2E 40%, #0D0D0D 0, #0D0D0D 60%, #2E2E2E 0, #2E2E2E 80%,#0D0D0D 0, #0D0D0D 100%);
+	background: -webkit-linear-gradient(30deg,
+										#0D0D0D 20%,
+										#2E2E2E 0,
+										#2E2E2E 40%,
+										#0D0D0D 0,
+										#0D0D0D 60%,
+										#2E2E2E 0,
+										#2E2E2E 80%,
+										#0D0D0D 0,
+										#0D0D0D 100%);
 	border-left: 10px solid #111111;
 	border-right: 10px solid #111111;
 	border-top: 6px solid #5E5E5E;
@@ -62,4 +71,32 @@
 
 .palabra-1,.palabra-2,.palabra-3{
 	width: 100%;
+}
+
+@keyframes adbl-header-1{
+	from{
+		width: 100%;
+		margin-left: 0%;
+		padding-left: 1%;
+	}
+
+	to{
+		width: 84%;
+		margin-left: 15%;
+		padding-left: 2%;
+	}
+}
+
+@keyframes adbl-header-2{
+	from{
+		width: 84%;
+		margin-left: 15%;
+		padding-left: 2%;
+	}
+
+	to{
+		width: 100%;
+		margin-left: 0%;
+		padding-left: 1%;
+	}
 }
